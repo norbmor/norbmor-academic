@@ -1,7 +1,8 @@
 [build]
-  command = "hugo"
+  command = "hugo --gc --minify"
   publish = "public"
 
 [build.environment]
+  HUGO_VERSION = "0.120.4"
   HUGO_EXTENDED = "true"
   GO_VERSION = "1.25.6"
