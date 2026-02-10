@@ -1,4 +1,4 @@
-baseURL = 'https://magnificent-halva-0c089c.netlify.app/'
+baseURL = 'https://norbmor.netlify.app/'
 languageCode = 'en-us'
 title = 'Norberto Moreno-Quibén - My academic site'
 theme = 'paper-mod' # Or whatever theme name you downloaded
