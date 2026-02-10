@@ -1,7 +1,7 @@
 baseURL = 'https://norbmor.netlify.app/'
 languageCode = 'en-us'
 title = 'Norberto Moreno-Quibén - My academic site'
-theme = 'PaperMod' # Or whatever theme name you downloaded
+theme = 'paper-mod' # Or whatever theme name you downloaded
 
 [[menu.main]]
   name = 'Curriculum Vitae'
