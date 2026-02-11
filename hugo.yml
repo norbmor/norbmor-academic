@@ -25,19 +25,8 @@ params:
   defaultTheme: auto # dark, light
   disableThemeToggle: false
 
-menu:
-  main:
-    - name: Curriculum Vitae
-      url: /cv/
-      weight: 10
-    - name: Research
-      url: /research/
-      weight: 20
-    - name: Teaching
-      url: /teaching/
-      weight: 30
 
-
+ShowReadingTime: true
   ShowShareButtons: true
   ShowPostNavLinks: true
   ShowBreadCrumbs: true
@@ -52,5 +41,19 @@ menu:
   hideSummary: false
   showtoc: false
   tocopen: false
+
+
+menu:
+  main:
+    - name: Curriculum Vitae
+      url: /cv/
+      weight: 10
+    - name: Research
+      url: /research/
+      weight: 20
+    - name: Teaching
+      url: /teaching/
+      weight: 30
+
 
 
