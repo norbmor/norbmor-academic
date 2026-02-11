@@ -1,7 +1,28 @@
 baseURL: https://norbmor.netlify.app/
 languageCode: en-us
-title: Norberto Moreno-Quibén - My academic site
 theme: paper-mod
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+params:
+  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  title: Norberto Moreno-Quibén's Web Page/Página web de Norberto Moreno-Quibén
+  description: "Academic web page by Norberto Moreno Quibén"
+  keywords: [Blog, Portfolio, academic]
+  author: Norberto Moreno-Quibén
+  # author: ["Me", "You"] # multiple authors
+ # images: ["<link or path of image for opengraph, twitter-cards>"]
+  DateFormat: "January 2, 2006"
+  defaultTheme: auto # dark, light
+  disableThemeToggle: false
+
 menu:
   main:
     - name: Curriculum Vitae
@@ -13,3 +34,4 @@ menu:
     - name: Teaching
       url: /teaching/
       weight: 30
+
