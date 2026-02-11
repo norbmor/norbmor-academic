@@ -1,5 +1,7 @@
 baseURL: https://norbmor.netlify.app/
 languageCode: en-us
+title: Norberto Moreno-Quibén's Web Page/Página web de Norberto Moreno-Quibén
+author: Norberto Moreno-Quibén
 theme: paper-mod
 
 enableRobotsTXT: true
