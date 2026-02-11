@@ -1,6 +1,6 @@
 baseURL: https://norbmor.netlify.app/
 languageCode: en-us
-title: Norberto Moreno-Quibén's Web Page/Página web de Norberto Moreno-Quibén
+title: Norberto Moreno-Quibén's Web Page
 author: Norberto Moreno-Quibén
 theme: paper-mod
 
@@ -15,7 +15,7 @@ minify:
 
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
-  title: Norberto Moreno-Quibén's Web Page/Página web de Norberto Moreno-Quibén
+  title: Norberto Moreno-Quibén's Web Page/author: Norberto Moreno-Quibén
   description: "Academic web page by Norberto Moreno Quibén"
   keywords: [Blog, Portfolio, academic]
   author: Norberto Moreno-Quibén
