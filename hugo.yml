@@ -15,7 +15,7 @@ minify:
 
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
-  title: Norberto Moreno-Quibén's Web Page/author: Norberto Moreno-Quibén
+  title: Norberto Moreno-Quibén's Web Page
   description: "Academic web page by Norberto Moreno Quibén"
   keywords: [Blog, Portfolio, academic]
   author: Norberto Moreno-Quibén
