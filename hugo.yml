@@ -1,0 +1,15 @@
+baseURL: https://norbmor.netlify.app/
+languageCode: en-us
+title: Norberto Moreno-Quibén - My academic site
+theme: paper-mod
+menu:
+  main:
+    - name: Curriculum Vitae
+      url: /cv/
+      weight: 10
+    - name: Research
+      url: /research/
+      weight: 20
+    - name: Teaching
+      url: /teaching/
+      weight: 30
