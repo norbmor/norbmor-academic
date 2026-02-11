@@ -38,7 +38,7 @@ menu:
       weight: 30
 
 
-ShowReadingTime: true
+  ShowReadingTime: true
   ShowShareButtons: true
   ShowPostNavLinks: true
   ShowBreadCrumbs: true
