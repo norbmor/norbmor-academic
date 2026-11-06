@@ -1,0 +1,26 @@
+{{ define "main" }}
+<main>
+  <div class="container">
+    <div class="row mt-5 mb-4">
+      <div class="col-lg-9 mx-auto">
+        <h1 class="text-primary pb-2">{{ .Title }}</h1>
+        {{ with .Params.citation }}
+        <p class="fs-5 text-secondary">{{ . | markdownify }}</p>
+        {{ end }}
+        <div class="mb-4">
+          {{ with .Params.file }}
+          <a class="badge rounded-pill border bg-light text-secondary caps fw-normal fs-6" href="{{ (printf "files/%s" .) | relURL }}">
+            <i class="bi bi-file-earmark-pdf text-primary"></i> Download PDF
+          </a>
+          {{ end }}
+        </div>
+        <div class="fs-5">
+          {{ .Content }}
+        </div>
+        <p class="mt-4 caps"><a href="{{ "/research/" | relURL }}">&larr; Back to Research Archive</a></p>
+      </div>
+    </div>
+  </div>
+</main>
+<hr class="border border-secondary">
+{{ end }}

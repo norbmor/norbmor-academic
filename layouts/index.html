@@ -61,14 +61,16 @@
     <div class="col-lg-4">
       <h2 class="text-primary"><a href="{{ "/research/" | relURL }}">Recent Research</a></h2>
       <dl class="row">
+        {{ range first 7 (where .Site.RegularPages "Section" "research") }}
         <dt class="col-1">
           <i class="text-primary bi bi-file-earmark-text"></i>
         </dt>
-        <dd class="col-11">
-          &ldquo;<a href="{{ "/research/" | relURL }}">Title of Paper 1</a>,&rdquo; <em>Journal of X</em> (2023). We discuss Y and Z.
-          <a href="{{ "/research/" | relURL }}" class="badge border rounded-pill text-secondary bg-light caps fw-normal">Abstract</a>
-          <a class="badge rounded-pill border bg-light text-secondary caps fw-normal" href="{{ "/files/paper1.pdf" | relURL }}">PDF</a>
+        <dd class="col-11 mb-2">
+          {{ if .Params.citation }}{{ .Params.citation | markdownify }}{{ else }}<a href="{{ .RelPermalink }}">{{ .Title }}</a> ({{ .Date.Format "2006" }}).{{ end }}
+          <a href="{{ .RelPermalink }}" class="badge border rounded-pill text-secondary bg-light caps fw-normal">Abstract</a>
+          {{ with .Params.file }}<a class="badge rounded-pill border bg-light text-secondary caps fw-normal" href="{{ (printf "files/%s" .) | relURL }}">PDF</a>{{ end }}
         </dd>
+        {{ end }}
       </dl>
 
       <hr class="border border-secondary">

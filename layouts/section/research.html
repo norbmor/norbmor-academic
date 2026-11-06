@@ -1,0 +1,37 @@
+{{ define "main" }}
+<main>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h1 class="text-primary mt-5 pb-3">{{ .Title }}</h1>
+        {{ .Content }}
+      </div>
+    </div>
+    {{ range .Pages.GroupByDate "2006" }}
+    <div class="row py-2">
+      <div class="col-md-1">
+        <h2 class="text-primary text-center fs-4"><a id="{{ .Key }}">{{ .Key }}</a></h2>
+      </div>
+      <div class="col-md-11">
+        {{ range .Pages }}
+        <div class="mb-3">
+          <p class="mb-1">
+            <i class="text-primary bi bi-file-earmark-text"></i>
+            {{ if .Params.citation }}{{ .Params.citation | markdownify }}{{ else }}<strong>{{ .Title }}</strong> ({{ .Date.Format "2006" }}).{{ end }}
+            <a href="{{ .RelPermalink }}" class="badge border rounded-pill text-secondary bg-light caps fw-normal">Abstract</a>
+            {{ with .Params.file }}<a class="badge rounded-pill border bg-light text-secondary caps fw-normal" href="{{ (printf "files/%s" .) | relURL }}">PDF</a>{{ end }}
+          </p>
+          {{ if .Content }}
+          <blockquote class="small text-secondary mt-1">
+            {{ .Content }}
+          </blockquote>
+          {{ end }}
+        </div>
+        {{ end }}
+      </div>
+    </div>
+    {{ end }}
+  </div>
+</main>
+<hr class="border border-secondary">
+{{ end }}
