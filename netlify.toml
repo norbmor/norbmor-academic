@@ -6,3 +6,9 @@
   HUGO_VERSION = "0.154.5"
   HUGO_EXTENDED = "true"
   GO_VERSION = "1.25.6"
+
+[context.deploy-preview]
+  command = "hugo --gc --minify --buildFuture -b $DEPLOY_PRIME_URL"
+
+[context.branch-deploy]
+  command = "hugo --gc --minify -b $DEPLOY_PRIME_URL"

@@ -1,0 +1,7 @@
+# Netlify
+.netlify/
+
+# Hugo build output
+public/
+resources/_gen/
+.hugo_build.lock

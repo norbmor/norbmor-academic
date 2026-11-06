@@ -16,32 +16,46 @@ minify:
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
   title: Norberto Moreno-Quibén's Web Page
-  description: "Academic web page by Norberto Moreno Quibén"
-  keywords: [Blog, Portfolio, academic]
+  description: "Academic web page by Norberto Moreno-Quibén"
+  keywords: [Blog, Portfolio, academic, linguistics]
   author: Norberto Moreno-Quibén
-  # author: ["Me", "You"] # multiple authors
- # images: ["<link or path of image for opengraph, twitter-cards>"]
   DateFormat: "January 2, 2006"
   defaultTheme: auto # dark, light
   disableThemeToggle: false
 
+  ShowReadingTime: false
+  ShowShareButtons: false
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowWordCount: false
+  ShowRssButtonInSectionTermList: false
+  UseHugoToc: true
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: false
+  tocopen: false
 
-ShowReadingTime: true
-ShowShareButtons: true
-ShowPostNavLinks: true
-ShowBreadCrumbs: true
-ShowCodeCopyButtons: false
-ShowWordCount: true
-ShowRssButtonInSectionTermList: true
-UseHugoToc: true
-disableSpecial1stPost: false
-disableScrollToTop: false
-comments: false
-hidemeta: false
-hideSummary: false
-showtoc: false
-tocopen: false
+  profileMode:
+    enabled: true
+    title: "Norberto Moreno-Quibén"
+    subtitle: "Profesor Ayudante Doctor in Spanish Linguistics · Vicedean of Research and Student Affairs, Facultad de Filosofía y Letras, Universidad de Alcalá"
+    buttons:
+      - name: Curriculum Vitae
+        url: /cv/
+      - name: Research
+        url: /research/
+      - name: Teaching
+        url: /teaching/
 
+  socialIcons:
+    - name: github
+      url: "https://github.com/norbmor"
+    - name: email
+      url: "mailto:quiben@fastmail.com"
 
 menu:
   main:
@@ -54,6 +68,3 @@ menu:
     - name: Teaching
       url: /teaching/
       weight: 30
-
-
-
