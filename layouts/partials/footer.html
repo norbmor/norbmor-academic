@@ -1,0 +1,38 @@
+<div class="container">
+  <div class="row p-5">
+    <div class="col-lg-5">
+      <h2 class="text-primary fs-5"><a id="about">about</a></h2>
+      <p class="small">
+        I&rsquo;m <em>Norberto Moreno-Quibén</em>, and this is my <em>academic website</em>. <span class="text-primary">&para;</span> I am an <em>Adjunct Professor</em> (<em>Profesor Ayudante Doctor</em>) in Spanish Linguistics at the <a href="https://www.uah.es/">Universidad de Alcalá</a>, and <em>Vicedean of Research and Student Affairs</em> at the <a href="https://filosofiayletras.uah.es/">Facultad de Filosofía y Letras</a>. <span class="text-primary">&para;</span> My research and teaching focus on theoretical linguistics and the syntax and semantics of Spanish.
+      </p>
+    </div>
+    <div class="col-lg-3">
+      <h2 class="text-primary fs-5">sections</h2>
+      <ul class="list-unstyled small">
+        <li><i class="bi bi-person-vcard text-primary"></i> <a href="{{ "/cv/" | relURL }}" class="caps">Curriculum Vitae</a> (<a href="{{ "/files/my-cv.pdf" | relURL }}" class="caps">PDF</a>)</li>
+        <li><i class="bi bi-file-earmark-text text-primary"></i> <a href="{{ "/research/" | relURL }}" class="caps">Research &amp; Papers</a></li>
+        <li><i class="bi bi-people text-primary"></i> <a href="{{ "/teaching/" | relURL }}" class="caps">Teaching Materials</a></li>
+        <li><i class="bi bi-rss text-primary"></i> <a href="{{ "index.xml" | relURL }}">RSS&nbsp;feed</a></li>
+      </ul>
+    </div>
+    <div class="col-lg-4">
+      <h2 class="text-primary fs-5">contact</h2>
+      <ul class="list-unstyled small">
+        <li><i class="bi bi-inbox text-primary"></i> Email: <a href="mailto:quiben@fastmail.com">quiben@fastmail.com</a>.</li>
+        <li><i class="bi bi-github text-primary"></i> GitHub: <a rel="me" href="https://github.com/norbmor">github.com/norbmor</a>.</li>
+        <li><i class="bi bi-building text-primary"></i> Institution: <a href="https://filosofiayletras.uah.es/">Facultad de Filosofía y Letras, Universidad de Alcalá</a>.</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid bg-primary">
+  <div class="row mt-4">
+    <div class="col p-2 text-light text-center">
+      <small>This site is powered by <a href="https://netlify.com" class="text-light">Netlify</a>, <a href="https://github.com/norbmor/norbmor-academic" class="text-light">GitHub</a>, <a href="https://gohugo.io" class="text-light">Hugo</a>, and <a href="https://getbootstrap.com" class="text-light">Bootstrap</a> (design inspired by <a href="https://consequently.org" class="text-light">consequently.org</a>). &nbsp;&nbsp;&para;&nbsp;&nbsp; &copy; <span id="js-year"></span><noscript>{{ now.Format "2006" }}</noscript> {{ .Site.Copyright | default .Site.Title }}.</small>
+    </div>
+  </div>
+</div>
+<script>
+document.getElementById("js-year").innerHTML = new Date().getFullYear();
+</script>

@@ -1,0 +1,27 @@
+<nav class="navbar navbar-expand-md navbar-dark bg-primary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="{{ "/" | relURL }}"><i class="bi bi-house-fill"></i></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+      <ul class="navbar-nav mb-2 mb-md-0">
+        <li class="nav-item">
+          <a class="nav-link caps" href="{{ "/" | relURL }}">{{ if .IsHome }}<b>home</b>{{ else }}home{{ end }}</a>
+        </li>
+        <li class="nav-item caps">
+          <a class="nav-link" href="{{ "/cv/" | relURL }}">{{ if eq .Section "cv" }}<b>cv</b>{{ else }}cv{{ end }}</a>
+        </li>
+        <li class="nav-item caps">
+          <a class="nav-link" href="{{ "/research/" | relURL }}">{{ if eq .Section "research" }}<b>research</b>{{ else }}research{{ end }}</a>
+        </li>
+        <li class="nav-item caps">
+          <a class="nav-link" href="{{ "/teaching/" | relURL }}">{{ if eq .Section "teaching" }}<b>teaching</b>{{ else }}teaching{{ end }}</a>
+        </li>
+        <li class="nav-item caps">
+          <a class="nav-link" href="#about">about</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

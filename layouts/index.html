@@ -1,0 +1,99 @@
+{{ define "main" }}
+<div class="container">
+  <div class="row px-3 mt-5 mb-5">
+    <div class="col">
+      <p class="fs-5">
+        Hello! I&rsquo;m <em>Norberto Moreno-Quibén</em>, and this is my <em>personal academic website</em>. <span class="text-secondary">&para;</span> I am an <em>Adjunct Professor</em> (<em>Profesor Ayudante Doctor</em>) in Spanish Linguistics at the <a href="https://www.uah.es/">Universidad de Alcalá</a>, and <em>Vicedean of Research and Student Affairs</em> at the <a href="https://filosofiayletras.uah.es/">Facultad de Filosofía y Letras</a>. <span class="text-secondary">&para;</span> I like thinking about &ndash; and helping other people think about &ndash; theoretical linguistics, syntax, and semantics. <span class="text-secondary">&para;</span> I use this site to share my <a href="{{ "/cv/" | relURL }}">curriculum vitae</a>, and to serve as a repository of my <a href="{{ "/research/" | relURL }}">research</a> and <a href="{{ "/teaching/" | relURL }}">teaching materials</a>.
+      </p>
+      {{ .Content }}
+    </div>
+  </div>
+</div>
+<hr class="border border-secondary">
+<div class="container">
+  <div class="row py-2">
+    <div class="col-lg-8">
+      <div class="row">
+        <div class="col-md-3 col-lg-3"></div>
+        <div class="col-md-9 col-lg-9"><h2 class="text-primary"><a href="{{ "/cv/" | relURL }}">Curriculum Vitae</a></h2></div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-3 col-lg-3">
+          <h3 class="fs-5 text-end"><a href="{{ "/cv/#experience" | relURL }}">Experience</a></h3>
+          <h4 class="fs-6 text-end text-secondary">2023&ndash;Present</h4>
+        </div>
+        <div class="col-md-9 col-lg-9">
+          <ul class="list-unstyled">
+            <li class="mb-2">
+              <strong>Vicedean of Research and Student Affairs</strong>, Facultad de Filosofía y Letras, Universidad de Alcalá, 2025&ndash;Present.
+            </li>
+            <li class="mb-2">
+              <strong>Adjunct Professor</strong> (<strong>Profesor Ayudante Doctor</strong>), Universidad de Alcalá, 2023&ndash;Present.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <hr class="border border-secondary">
+
+      <div class="row">
+        <div class="col-md-3 col-lg-3">
+          <h3 class="fs-5 text-end"><a href="{{ "/cv/#education" | relURL }}">Education</a></h3>
+          <h4 class="fs-6 text-end text-secondary">1992&ndash;2022</h4>
+        </div>
+        <div class="col-md-9 col-lg-9">
+          <ul class="list-unstyled">
+            <li class="mb-2">
+              <strong>PhD in Spanish Linguistics</strong>, Universidad de Alcalá, 2022.
+            </li>
+            <li class="mb-2">
+              <strong>MSc in Theoretical Linguistics</strong>, Instituto Universitario Ortega y Gasset &ndash; Universidad Complutense de Madrid, 1992.
+            </li>
+          </ul>
+          <p class="text-end caps">
+            <a href="{{ "/files/my-cv.pdf" | relURL }}">Download Full CV (PDF)&hellip;</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-4">
+      <h2 class="text-primary"><a href="{{ "/research/" | relURL }}">Recent Research</a></h2>
+      <dl class="row">
+        <dt class="col-1">
+          <i class="text-primary bi bi-file-earmark-text"></i>
+        </dt>
+        <dd class="col-11">
+          &ldquo;<a href="{{ "/research/" | relURL }}">Title of Paper 1</a>,&rdquo; <em>Journal of X</em> (2023). We discuss Y and Z.
+          <a href="{{ "/research/" | relURL }}" class="badge border rounded-pill text-secondary bg-light caps fw-normal">Abstract</a>
+          <a class="badge rounded-pill border bg-light text-secondary caps fw-normal" href="{{ "/files/paper1.pdf" | relURL }}">PDF</a>
+        </dd>
+      </dl>
+
+      <hr class="border border-secondary">
+
+      <h2 class="text-primary"><a href="{{ "/teaching/" | relURL }}">Teaching &amp; Classes</a></h2>
+      <dl class="row">
+        <dt class="col-1"><i class="text-primary bi bi-people text-end"></i></dt>
+        <dd class="col-11 mb-3">
+          <a href="{{ "/teaching/#introduccion-a-la-sintaxis-del-espanol" | relURL }}" class="caps">Introducción a la Sintaxis del Español</a>, Universidad de Alcalá.
+          <div class="mt-1">
+            <a class="badge rounded-pill border bg-light text-secondary caps fw-normal" href="{{ "/files/subject1-syllabus.pdf" | relURL }}">Guía Docente (PDF)</a>
+            <a class="badge rounded-pill border bg-light text-secondary caps fw-normal" href="{{ "/files/subject1-lecture1.pdf" | relURL }}">Lecture 1 (PDF)</a>
+          </div>
+        </dd>
+
+        <dt class="col-1"><i class="text-primary bi bi-people text-end"></i></dt>
+        <dd class="col-11">
+          <a href="{{ "/teaching/#subject-2-advanced-y" | relURL }}" class="caps">Subject 2: Advanced Y</a>.
+          <div class="mt-1">
+            <a class="badge rounded-pill border bg-light text-secondary caps fw-normal" href="https://github.com/norbmor/siggram">Repository</a>
+          </div>
+        </dd>
+      </dl>
+    </div>
+  </div>
+</div>
+<hr class="border border-secondary">
+{{ end }}
