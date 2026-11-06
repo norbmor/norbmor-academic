@@ -1,0 +1,9 @@
+---
+title: "Del Léxico a la Pragmática en la expresión de la evidencialidad y la perspectiva en español"
+date: 2024-12-28
+citation: "Gumiel-Molina, Silvia, Norberto Moreno-Quibén, and Isabel Pérez-Jiménez (2024). “Del Léxico a la Pragmática en la expresión de la evidencialidad y la perspectiva en español.” *Boletín de Filología* 59 (2): 55–86."
+external_url: "https://boletinfilologia.uchile.cl/index.php/BDF/article/view/77226"
+keywords: "Evidentiality; perspectivization; (pseudo)copular structures; evaluative adjectives"
+---
+
+The aim of this paper is to analyse the limits and relations between the notions of evidentiality and subjectivity using Spanish (pseudo) copulative predication structures in which the predicate is an evaluative adjective. In these constructions an internal experience of the speaker is expressed, based on the perception of a situation, as the centre of perspective or source of knowledge. We will show that the subjective reading which occurs in (pseudo)copulative sentences in which an adjective of taste and personal judgement or an adjective of maximum degree appears is due to the fact that these adjectives possess in their structure an experiencer argument, which can be an implicit DP or be shown explicitly through a PP. Aesthetic adjectives, on the other hand, lack such an argument, which explains the contrasts between the different classes. This proposal sheds light on the relationship between the notions of evidentiality and subjectivity through the perspectivization of the utterance. We propose that perspectivisation is the result of the relationship between Lexicon, Syntax and Pragmatics while evidential meaning seems to be lexically encoded in the argument structure of the adjective. Thus, perspectivization and evidentiality should be considered as different but closely related concepts.

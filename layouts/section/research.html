@@ -14,12 +14,20 @@
       </div>
       <div class="col-md-11">
         {{ range .Pages }}
-        <div class="mb-3">
+        <div class="mb-4">
           <p class="mb-1">
+            {{- if eq .Params.kind "thesis" -}}
+            <i class="text-primary bi bi-book"></i>
+            {{- else if eq .Params.status "unpublished" -}}
+            <i class="text-primary bi bi-tools"></i>
+            {{- else -}}
             <i class="text-primary bi bi-file-earmark-text"></i>
+            {{- end -}}
             {{ if .Params.citation }}{{ .Params.citation | markdownify }}{{ else }}<strong>{{ .Title }}</strong> ({{ .Date.Format "2006" }}).{{ end }}
             <a href="{{ .RelPermalink }}" class="badge border rounded-pill text-secondary bg-light caps fw-normal">Abstract</a>
             {{ with .Params.file }}<a class="badge rounded-pill border bg-light text-secondary caps fw-normal" href="{{ (printf "files/%s" .) | relURL }}">PDF</a>{{ end }}
+            {{ with .Params.doi }}<a class="badge rounded-pill border bg-light text-secondary caps fw-normal" href="{{ . }}" target="_blank" rel="noopener">DOI</a>{{ end }}
+            {{ with .Params.external_url }}<a class="badge rounded-pill border bg-light text-secondary caps fw-normal" href="{{ . }}" target="_blank" rel="noopener">Journal</a>{{ end }}
           </p>
           {{ if .Content }}
           <blockquote class="small text-secondary mt-1">

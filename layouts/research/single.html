@@ -9,14 +9,27 @@
         {{ end }}
         <div class="mb-4">
           {{ with .Params.file }}
-          <a class="badge rounded-pill border bg-light text-secondary caps fw-normal fs-6" href="{{ (printf "files/%s" .) | relURL }}">
+          <a class="badge rounded-pill border bg-light text-secondary caps fw-normal fs-6 me-1" href="{{ (printf "files/%s" .) | relURL }}">
             <i class="bi bi-file-earmark-pdf text-primary"></i> Download PDF
+          </a>
+          {{ end }}
+          {{ with .Params.doi }}
+          <a class="badge rounded-pill border bg-light text-secondary caps fw-normal fs-6 me-1" href="{{ . }}" target="_blank" rel="noopener">
+            <i class="bi bi-box-arrow-up-right text-primary"></i> DOI
+          </a>
+          {{ end }}
+          {{ with .Params.external_url }}
+          <a class="badge rounded-pill border bg-light text-secondary caps fw-normal fs-6 me-1" href="{{ . }}" target="_blank" rel="noopener">
+            <i class="bi bi-journal-text text-primary"></i> Journal Link
           </a>
           {{ end }}
         </div>
         <div class="fs-5">
           {{ .Content }}
         </div>
+        {{ with .Params.keywords }}
+        <p class="small text-secondary mt-3"><strong>Keywords:</strong> {{ . }}</p>
+        {{ end }}
         <p class="mt-4 caps"><a href="{{ "/research/" | relURL }}">&larr; Back to Research Archive</a></p>
       </div>
     </div>

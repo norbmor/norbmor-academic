@@ -1,0 +1,9 @@
+---
+title: "Lexical–Syntactic Classes of Adjectives in Copular Sentences across Spanish Varieties: The Innovative Use of Estar"
+date: 2024-01-20
+citation: "Gumiel-Molina, Silvia, Norberto Moreno-Quibén, and Isabel Pérez-Jiménez (2024). “Lexical–Syntactic Classes of Adjectives in Copular Sentences across Spanish Varieties: The Innovative Use of Estar.” *Languages* 9 (1): 20."
+doi: "https://doi.org/10.3390/languages9010020"
+keywords: "ser; estar; copular verbs; syntactic variation; adjectives; argument structure"
+---
+
+This paper aims to provide a clearer understanding of the structure known in the literature as the innovative use of *estar*, illustrated in sentences like *Luego salgo/voy a visitar usuarios que están muy morosos* `[Medellín, Colombia; Preseea]` (“Today I am going to visit users that are.ESTAR defaulting debtors”). In such sentences, no comparison is established between stages or counterparts of the subject of predication with regard to the property expressed by the adjective, as opposed to *estar*-sentences in standard/general Spanish. This innovative structure is a syntactic scheme employed throughout different Latin American Spanish varieties. The goal of this paper is twofold: it is both descriptive and theoretical. From a descriptive perspective, it offers an exhaustive and updated empirical characterization of the extent of this structure in Latin American Spanish based on an analysis of the Preseea corpus. This description takes into consideration both its geographical distribution in the different Latin American dialectal varieties and the lexical–syntactic classes of adjectives that appear as predicates in innovative *estar*-sentences. Building on this, from a theoretical point of view, a critical evaluation is made of the existing proposals in the literature that explain the properties—both syntactic and semantic—of the innovative construction.

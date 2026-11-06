@@ -30,15 +30,24 @@
       <dl class="row">
         {{ range first 7 (where .Site.RegularPages "Section" "research") }}
         <dt class="col-1">
+          {{- if eq .Params.kind "thesis" -}}
+          <i class="text-primary bi bi-book"></i>
+          {{- else if eq .Params.status "unpublished" -}}
+          <i class="text-primary bi bi-tools"></i>
+          {{- else -}}
           <i class="text-primary bi bi-file-earmark-text"></i>
+          {{- end -}}
         </dt>
         <dd class="col-11 mb-2">
           {{ if .Params.citation }}{{ .Params.citation | markdownify }}{{ else }}<a href="{{ .RelPermalink }}">{{ .Title }}</a> ({{ .Date.Format "2006" }}).{{ end }}
           <a href="{{ .RelPermalink }}" class="badge border rounded-pill text-secondary bg-light caps fw-normal">Abstract</a>
           {{ with .Params.file }}<a class="badge rounded-pill border bg-light text-secondary caps fw-normal" href="{{ (printf "files/%s" .) | relURL }}">PDF</a>{{ end }}
+          {{ with .Params.doi }}<a class="badge rounded-pill border bg-light text-secondary caps fw-normal" href="{{ . }}" target="_blank" rel="noopener">DOI</a>{{ end }}
+          {{ with .Params.external_url }}<a class="badge rounded-pill border bg-light text-secondary caps fw-normal" href="{{ . }}" target="_blank" rel="noopener">Journal</a>{{ end }}
         </dd>
         {{ end }}
       </dl>
+      <p class="text-end caps"><a href="{{ "/research/" | relURL }}">All Research &amp; Papers&hellip;</a></p>
 
       <hr class="border border-secondary">
 
