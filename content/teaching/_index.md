@@ -10,6 +10,7 @@ title: "Teaching Materials"
 
 ---
 
-## Subject 2: Advanced Y
+## Signficado y Gramática: Fundamentos de Semántica Composicional (790080_G970)
 
-* [Course Material Repository](https://github.com/norbmor/siggram)
+* [Guía Docente](https://www.uah.es/3173e336-90e6-4111-a0c2-00f4707ba268)
+* [Guía del curso 2026-2027](/files/02_01_semantica-composicional.pdf)

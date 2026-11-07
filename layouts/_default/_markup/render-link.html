@@ -9,6 +9,8 @@
   {{- end -}}
 {{- else if $isGitHub -}}
 <i class="text-primary bi bi-github me-1"></i><a href="{{ $dest | safeURL }}"{{ with .Title }} title="{{ . }}"{{ end }}>{{ .Text | safeHTML }}</a> <a class="badge rounded-pill border bg-light text-secondary caps fw-normal ms-1" href="{{ $dest | safeURL }}">GitHub</a>
+{{- else if eq .Page.Section "teaching" -}}
+<i class="text-primary bi bi-box-arrow-up-right me-1"></i><a href="{{ $dest | safeURL }}"{{ with .Title }} title="{{ . }}"{{ end }}>{{ .Text | safeHTML }}</a> <a class="badge rounded-pill border bg-light text-secondary caps fw-normal ms-1" href="{{ $dest | safeURL }}">Web</a>
 {{- else -}}
 <a href="{{ $dest | safeURL }}"{{ with .Title }} title="{{ . }}"{{ end }}>{{ .Text | safeHTML }}</a>
 {{- end -}}
