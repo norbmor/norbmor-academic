@@ -38,5 +38,6 @@ The homepage (`layouts/index.html`) dynamically pulls content from the `content/
   Abstract text here...
   ```
   Adding a `.md` file in `content/research/` automatically updates the **Recent Research** list on the homepage, the year-grouped archive at `/research/`, and creates a dedicated abstract page.
+- **Conferences**: Edit `content/conferences/_index.md` using plain Markdown. Each conference entry starts with the microphone icon `<i class="text-primary bi bi-mic me-1"></i>` and bold year (`**YYYY**.`). Links written as `[PDF](/files/<filename>.pdf)` automatically render as a rounded `PDF` pill badge.
 - **Teaching Materials**: Edit `content/teaching/_index.md` using plain Markdown. Any link ending in `.pdf` or pointing to `github.com` is automatically styled with an icon and a rounded pill badge (`PDF` or `GitHub`) by `layouts/_default/_markup/render-link.html`.
 - **Static Files / PDFs**: Place downloadable PDFs in `static/files/` and reference them as `/files/<filename>.pdf` (or `file: "<filename>.pdf"` in research paper frontmatter).

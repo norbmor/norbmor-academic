@@ -2,7 +2,11 @@
 {{- $isPDF := strings.HasSuffix (lower $dest) ".pdf" -}}
 {{- $isGitHub := strings.Contains (lower $dest) "github.com" -}}
 {{- if $isPDF -}}
+  {{- if eq (upper (strings.TrimSpace .PlainText)) "PDF" -}}
+<a class="badge rounded-pill border bg-light text-secondary caps fw-normal ms-1" href="{{ $dest | safeURL }}"{{ with .Title }} title="{{ . }}"{{ end }}>PDF</a>
+  {{- else -}}
 <i class="text-primary bi bi-file-earmark-pdf me-1"></i><a href="{{ $dest | safeURL }}"{{ with .Title }} title="{{ . }}"{{ end }}>{{ .Text | safeHTML }}</a> <a class="badge rounded-pill border bg-light text-secondary caps fw-normal ms-1" href="{{ $dest | safeURL }}">PDF</a>
+  {{- end -}}
 {{- else if $isGitHub -}}
 <i class="text-primary bi bi-github me-1"></i><a href="{{ $dest | safeURL }}"{{ with .Title }} title="{{ . }}"{{ end }}>{{ .Text | safeHTML }}</a> <a class="badge rounded-pill border bg-light text-secondary caps fw-normal ms-1" href="{{ $dest | safeURL }}">GitHub</a>
 {{- else -}}

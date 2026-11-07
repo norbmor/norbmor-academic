@@ -32,6 +32,9 @@ menu:
     - name: research
       url: /research/
       weight: 20
+    - name: conferences
+      url: /conferences/
+      weight: 25
     - name: teaching
       url: /teaching/
       weight: 30
