@@ -1,0 +1,42 @@
+# Project Context & Instructions for Antigravity (`norbmor-academic`)
+
+This repository contains the source code and content for **Norberto Moreno-Quibén's** personal academic website, built with **Hugo** and deployed automatically to **Netlify** at **https://norbmor.netlify.app/**.
+
+## 1. Architecture & Deployment
+- **GitHub Repository**: `https://github.com/norbmor/norbmor-academic` (`main` branch).
+- **Netlify Project**: `norbmor` (Site ID: `440e1472-ec4a-4259-9aac-df0dcec5528c`, URL: `https://norbmor.netlify.app/`).
+- **Build Configuration** (`netlify.toml`):
+  - Runs `hugo --gc --minify` with `HUGO_VERSION = "0.154.5"` (`HUGO_EXTENDED = "true"`).
+  - Pushing to `origin main` automatically triggers a production build and deploy on Netlify.
+  - Note: Do not add a GitHub Pages Actions workflow (`.github/workflows/`) unless GitHub Pages is explicitly enabled in the repo settings.
+
+## 2. Design & Styling (`consequently.org` + UAH Corporate Blue)
+- The layout and typography are modeled after Greg Restall's `https://consequently.org/` using Bootstrap 5 and Google Fonts (**Alegreya**, **Alegreya SC**, **Alegreya Sans**, **Alegreya Sans SC**) in `static/css/style.css`.
+- **Color Palette**:
+  - Primary color (`--bs-primary`): `#002C91` (Universidad de Alcalá official corporate blue, Pantone 661 C).
+  - Secondary color (`--bs-secondary`): `#5A76B0` (muted slate blue for borders, dates, pilcrows, and badges).
+- **Conventions**:
+  - Homepage introduction (`content/_index.md`) uses inline pilcrow separators (`<span class="text-secondary">&para;</span>`) between sentences/topics and a left-floated portrait thumbnail (`/img/foto-NMQ-2018.jpg`).
+  - Email address (`norberto.morenoquibe@uah.es`) in `layouts/partials/footer.html` must remain **non-clickable** plain text styled in UAH blue (`<span class="text-primary">norberto.morenoquibe@uah.es</span>`).
+
+## 3. Content Structure & How Pages Update
+The homepage (`layouts/index.html`) dynamically pulls content from the `content/` folder:
+- **Homepage Bio**: Edit `content/_index.md`.
+- **Curriculum Vitae**: Edit `content/cv/_index.md` (plain Markdown) and replace `static/files/my-cv.pdf` as needed. Updates both `/cv/` and the left column of the homepage.
+- **Research Papers**: Each paper is a Markdown file in `content/research/<slug>.md` with frontmatter:
+  ```yaml
+  ---
+  title: "Paper Title"
+  date: YYYY-MM-DD
+  citation: "Author (Year). “Title.” *Journal*..."
+  file: "filename-in-static-files.pdf" # optional
+  doi: "https://doi.org/..."           # optional
+  external_url: "https://..."          # optional
+  status: "unpublished"                # optional ("unpublished" shows tools icon; kind: "thesis" shows book icon)
+  keywords: "kw1; kw2"                 # optional
+  ---
+  Abstract text here...
+  ```
+  Adding a `.md` file in `content/research/` automatically updates the **Recent Research** list on the homepage, the year-grouped archive at `/research/`, and creates a dedicated abstract page.
+- **Teaching Materials**: Edit `content/teaching/_index.md` using plain Markdown. Any link ending in `.pdf` or pointing to `github.com` is automatically styled with an icon and a rounded pill badge (`PDF` or `GitHub`) by `layouts/_default/_markup/render-link.html`.
+- **Static Files / PDFs**: Place downloadable PDFs in `static/files/` and reference them as `/files/<filename>.pdf` (or `file: "<filename>.pdf"` in research paper frontmatter).
