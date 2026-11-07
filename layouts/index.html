@@ -22,7 +22,7 @@
       <h2 class="text-primary"><a href="{{ "/conferences/" | relURL }}">Recent Conferences</a></h2>
       <div class="content-archive">
         <ul>
-          {{ range findRE "(?s)<li>.*?</li>" .Content 5 }}
+          {{ range findRE "(?s)<li>.*?</li>" .Content 3 }}
             {{ . | safeHTML }}
           {{ end }}
         </ul>
