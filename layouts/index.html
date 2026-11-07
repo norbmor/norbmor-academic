@@ -16,6 +16,19 @@
           {{ .Content }}
         {{ end }}
       </div>
+
+      {{ with .Site.GetPage "/conferences" }}
+      <hr class="border border-secondary">
+      <h2 class="text-primary"><a href="{{ "/conferences/" | relURL }}">Recent Conferences</a></h2>
+      <div class="content-archive">
+        <ul>
+          {{ range findRE "(?s)<li>.*?</li>" .Content 5 }}
+            {{ . | safeHTML }}
+          {{ end }}
+        </ul>
+      </div>
+      <p class="text-end caps"><a href="{{ "/conferences/" | relURL }}">All Conferences&hellip;</a></p>
+      {{ end }}
     </div>
 
     <div class="col-lg-5">
