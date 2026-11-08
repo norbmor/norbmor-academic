@@ -1,13 +1,18 @@
 # Project Context & Instructions for Antigravity (`norbmor-academic`)
 
-This repository contains the source code and content for **Norberto Moreno-Quibén's** personal academic website, built with **Hugo** and deployed automatically to **Netlify** at **https://norbmor.netlify.app/**.
+This repository contains the source code and content for **Norberto Moreno-Quibén's** personal academic website, built with **Hugo** and deployed automatically to **Netlify** at **https://www.quiben.net/** (Netlify subdomain: **https://norbmor.netlify.app/**).
 
-## 1. Architecture & Deployment
-- **GitHub Repository**: `https://github.com/norbmor/norbmor-academic` (`main` branch).
-- **Netlify Project**: `norbmor` (Site ID: `440e1472-ec4a-4259-9aac-df0dcec5528c`, URL: `https://norbmor.netlify.app/`).
+## 1. Architecture, Domain & Deployment
+- **GitHub Repository**: `https://github.com/norbmor/norbmor-academic` (`main` branch, SSH remote `git@github.com:norbmor/norbmor-academic.git`).
+- **Netlify Project**: `norbmor` (Site ID: `440e1472-ec4a-4259-9aac-df0dcec5528c`).
+- **Primary Custom Domain**: `https://www.quiben.net/` (`baseURL` in `hugo.yml`), with `https://norbmor.netlify.app/` as the underlying Netlify site URL.
+  - **Custom Domain & DNS Configuration (`quiben.net` via DreamHost / Netlify)**:
+    - In Netlify (**Domain management**), `www.quiben.net` and `quiben.net` are registered as custom domains with automatic Let's Encrypt HTTPS provisioning.
+    - **Option A (Netlify DNS)**: Delegate nameservers in DreamHost (**Nameservers → Change**) from `ns1–ns3.dreamhost.com` to the 4 Netlify `nsone.net` nameservers.
+    - **Option B (DreamHost DNS Only)**: Switch `quiben.net` from *Fully Hosted* to *DNS Only* in DreamHost (**Websites → Manage Websites**) to unlock `@` and `www` while preserving DreamHost email records, then add an `A` record on `@` pointing to `75.2.60.5` and a `CNAME` record on `www` pointing to `norbmor.netlify.app`.
 - **Build Configuration** (`netlify.toml`):
   - Runs `hugo --gc --minify` with `HUGO_VERSION = "0.154.5"` (`HUGO_EXTENDED = "true"`).
-  - Pushing to `origin main` automatically triggers a production build and deploy on Netlify.
+  - Pushing to `origin main` automatically triggers a production build and deploy on Netlify (`https://www.quiben.net/`).
   - Note: Do not add a GitHub Pages Actions workflow (`.github/workflows/`) unless GitHub Pages is explicitly enabled in the repo settings.
 
 ## 2. Design & Styling (`consequently.org` + UAH Corporate Blue)
