@@ -1,3 +1,3 @@
 ---
-title: "Research Archive"
+title: "Research"
 ---
