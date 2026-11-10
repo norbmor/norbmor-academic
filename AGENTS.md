@@ -37,7 +37,7 @@ The homepage (`layouts/index.html`) dynamically pulls content from the `content/
   file: "filename-in-static-files.pdf" # optional
   doi: "https://doi.org/..."           # optional
   external_url: "https://..."          # optional
-  status: "unpublished"                # optional ("unpublished" shows tools icon; kind: "thesis" shows book icon)
+  status: "unpublished"                # optional ("unpublished" shows tools icon; kind: "thesis" or "chapter" shows book icon)
   keywords: "kw1; kw2"                 # optional
   ---
   Abstract text here...

@@ -16,7 +16,7 @@
         {{ range .Pages }}
         <div class="mb-4">
           <p class="mb-1">
-            {{- if eq .Params.kind "thesis" -}}
+            {{- if or (eq .Params.kind "thesis") (eq .Params.kind "chapter") -}}
             <i class="text-primary bi bi-book"></i>
             {{- else if eq .Params.status "unpublished" -}}
             <i class="text-primary bi bi-tools"></i>

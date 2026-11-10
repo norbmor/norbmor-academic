@@ -43,7 +43,7 @@
       <dl class="row">
         {{ range first 7 (where .Site.RegularPages "Section" "research") }}
         <dt class="col-1">
-          {{- if eq .Params.kind "thesis" -}}
+          {{- if or (eq .Params.kind "thesis") (eq .Params.kind "chapter") -}}
           <i class="text-primary bi bi-book"></i>
           {{- else if eq .Params.status "unpublished" -}}
           <i class="text-primary bi bi-tools"></i>
