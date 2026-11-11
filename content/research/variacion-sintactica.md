@@ -1,6 +1,7 @@
 ---
 title: "Variación sintáctica en español con verbos no predicativos desde una perspectiva microparamétrica: construcciones existenciales, copulativas y semicopulativas"
 date: 2024-12-18
+kind: "paper"
 citation: "Gumiel-Molina, Silvia, Norberto Moreno-Quibén, and Isabel Pérez-Jiménez (2024). “Variación sintáctica en español con verbos no predicativos desde una perspectiva microparamétrica: construcciones existenciales, copulativas y semicopulativas.” *Revista Española de Lingüística* 54 (2): 63–110."
 doi: "https://doi.org/10.31810/rsel.54.2.2"
 keywords: "syntactic variation; copulative verbs; semicopulative verbs; existential constructions; ser; estar; haber; microparameters; adjectives; argument structure"

@@ -1,6 +1,7 @@
 ---
 title: "Perspectivized estar-sentences with aesthetic adjectives across American Spanish varieties"
 date: 2023-06-01
+kind: "paper"
 citation: "Gumiel-Molina, Silvia, Norberto Moreno-Quibén, and Isabel Pérez-Jiménez (2023). “Perspectivized Estar-Sentences with Aesthetic Adjectives across American Spanish Varieties.” *Spanish in Context*."
 doi: "https://dx.doi.org/10.1075/sic.00086.gum"
 keywords: "aesthetic adjectives; variation; evaluative adjectives; estar; copulas"

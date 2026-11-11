@@ -1,6 +1,7 @@
 ---
 title: "Del Léxico a la Pragmática en la expresión de la evidencialidad y la perspectiva en español"
 date: 2024-12-28
+kind: "paper"
 citation: "Gumiel-Molina, Silvia, Norberto Moreno-Quibén, and Isabel Pérez-Jiménez (2024). “Del Léxico a la Pragmática en la expresión de la evidencialidad y la perspectiva en español.” *Boletín de Filología* 59 (2): 55–86."
 external_url: "https://boletinfilologia.uchile.cl/index.php/BDF/article/view/77226"
 keywords: "Evidentiality; perspectivization; (pseudo)copular structures; evaluative adjectives"

@@ -20,6 +20,8 @@
             <i class="text-primary bi bi-book"></i>
             {{- else if eq .Params.status "unpublished" -}}
             <i class="text-primary bi bi-tools"></i>
+            {{- else if eq .Params.kind "paper" -}}
+            <i class="text-primary bi bi-file-earmark-text"></i>
             {{- else -}}
             <i class="text-primary bi bi-file-earmark-text"></i>
             {{- end -}}

@@ -1,6 +1,7 @@
 ---
 title: "Lexical–Syntactic Classes of Adjectives in Copular Sentences across Spanish Varieties: The Innovative Use of Estar"
 date: 2024-01-20
+kind: "paper"
 citation: "Gumiel-Molina, Silvia, Norberto Moreno-Quibén, and Isabel Pérez-Jiménez (2024). “Lexical–Syntactic Classes of Adjectives in Copular Sentences across Spanish Varieties: The Innovative Use of Estar.” *Languages* 9 (1): 20."
 doi: "https://doi.org/10.3390/languages9010020"
 keywords: "ser; estar; copular verbs; syntactic variation; adjectives; argument structure"

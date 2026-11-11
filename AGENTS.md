@@ -33,11 +33,12 @@ The homepage (`layouts/index.html`) dynamically pulls content from the `content/
   ---
   title: "Paper Title"
   date: YYYY-MM-DD
+  kind: "paper"                        # "paper" (document icon, default), "chapter" or "thesis" (book icon)
   citation: "Author (Year). “Title.” *Journal*..."
   file: "filename-in-static-files.pdf" # optional
   doi: "https://doi.org/..."           # optional
   external_url: "https://..."          # optional
-  status: "unpublished"                # optional ("unpublished" shows tools icon; kind: "thesis" or "chapter" shows book icon)
+  status: "unpublished"                # optional ("unpublished" shows tools icon)
   keywords: "kw1; kw2"                 # optional
   ---
   Abstract text here...

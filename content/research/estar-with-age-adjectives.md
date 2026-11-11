@@ -1,6 +1,7 @@
 ---
 title: "Estar with age adjectives. A multifactorial bayesian approach to the distribution of copulative verbs across Spanish varieties"
 date: 2026-05-13
+kind: "paper"
 citation: "Moreno-Quibén, Norberto (2026). “Estar with age adjectives. A multifactorial bayesian approach to the distribution of copulative verbs across Spanish varieties.” Accepted in *RILCE* (forthcoming, December 2026)."
 file: "Estar-with-age-adjectives_a-Bayesian-approach_v5_final.pdf"
 ---

@@ -1,6 +1,7 @@
 ---
 title: "On degree minimizers in Spanish"
 date: 2020-06-01
+kind: "paper"
 citation: "Gumiel-Molina, Silvia, Norberto Moreno-Quibén, and Isabel Pérez-Jiménez (2020). “On Degree Minimizers in Spanish.” *Borealis – An International Journal of Hispanic Linguistics* 9 (1): 69–86."
 doi: "https://doi.org/10.7557/1.9.1.5367"
 ---
