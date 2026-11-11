@@ -12,3 +12,14 @@
 
 [context.branch-deploy]
   command = "hugo --gc --minify -b $DEPLOY_PRIME_URL"
+
+[[redirects]]
+  from = "/feed"
+  to = "/index.xml"
+  status = 301
+
+[[redirects]]
+  from = "/feed/*"
+  to = "/index.xml"
+  status = 301
+

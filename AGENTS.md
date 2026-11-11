@@ -13,6 +13,7 @@ This repository contains the source code and content for **Norberto Moreno-Quib√
 - **Build Configuration** (`netlify.toml`):
   - Runs `hugo --gc --minify` with `HUGO_VERSION = "0.154.5"` (`HUGO_EXTENDED = "true"`).
   - Pushing to `origin main` automatically triggers a production build and deploy on Netlify (`https://www.quiben.net/`).
+  - Redirects `/feed` and `/feed/*` (301) to `/index.xml` so legacy WordPress RSS subscribers continue receiving feed updates.
   - Note: Do not add a GitHub Pages Actions workflow (`.github/workflows/`) unless GitHub Pages is explicitly enabled in the repo settings.
 
 ## 2. Design & Styling (`consequently.org` + UAH Corporate Blue)
