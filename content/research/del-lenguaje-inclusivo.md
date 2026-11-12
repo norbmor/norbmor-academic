@@ -2,7 +2,7 @@
 title: "Del lenguaje inclusivo a la arquitectura de la lengua. El caso de los y las N"
 date: 2026-11-12
 kind: "chapter"
-citation: "Moreno-Quibén, Norberto & Pérez-Jiménez, Isabel & Núñez, Ana Romero (2026). “Del lenguaje inclusivo a la arquitectura de la lengua. El caso de *los y las N*.” In Martínez-Atienza de Dios, María & Ruiz Granados, Beatriz & Martín Ríder, Ana & Chaves Esquinas, Nerea (eds.), *Las intersecciones entre los niveles gramaticales*, 87–110. De Gruyter."
+citation: "Moreno-Quibén, Norberto & Pérez-Jiménez, Isabel & Romero Núñez, Ana (2026). “Del lenguaje inclusivo a la arquitectura de la lengua. El caso de *los y las N*.” In Martínez-Atienza de Dios, María & Ruiz Granados, Beatriz & Martín Ríder, Ana & Chaves Esquinas, Nerea (eds.), *Las intersecciones entre los niveles gramaticales*, 87–110. De Gruyter."
 file: "Lenguaje-inclusivo_arquitectura-lengua_los_con_marca.pdf"
 doi: "https://doi.org/10.1515/9783112222188-005"
 ---
