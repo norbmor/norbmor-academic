@@ -58,7 +58,9 @@
           <a href="{{ .RelPermalink }}" class="badge border rounded-pill text-secondary bg-light caps fw-normal">Abstract</a>
           {{ with .Params.file }}<a class="badge rounded-pill border bg-light text-secondary caps fw-normal" href="{{ (printf "files/%s" .) | relURL }}">PDF</a>{{ end }}
           {{ with .Params.doi }}<a class="badge rounded-pill border bg-light text-secondary caps fw-normal" href="{{ . }}" target="_blank" rel="noopener">DOI</a>{{ end }}
-          {{ with .Params.external_url }}<a class="badge rounded-pill border bg-light text-secondary caps fw-normal" href="{{ . }}" target="_blank" rel="noopener">Journal</a>{{ end }}
+          {{- $extLabel := "Journal" -}}
+          {{- if eq .Params.kind "chapter" -}}{{- $extLabel = "Book" -}}{{- else if eq .Params.kind "thesis" -}}{{- $extLabel = "Thesis" -}}{{- end -}}
+          {{ with .Params.external_url }}<a class="badge rounded-pill border bg-light text-secondary caps fw-normal" href="{{ . }}" target="_blank" rel="noopener">{{ $extLabel }}</a>{{ end }}
         </dd>
         {{ end }}
       </dl>

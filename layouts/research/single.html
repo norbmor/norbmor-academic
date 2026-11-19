@@ -18,9 +18,12 @@
             <i class="bi bi-box-arrow-up-right text-primary"></i> DOI
           </a>
           {{ end }}
+          {{- $extLabel := "Journal Link" -}}
+          {{- $extIcon := "bi-journal-text" -}}
+          {{- if eq .Params.kind "chapter" -}}{{- $extLabel = "Book Link" -}}{{- $extIcon = "bi-book" -}}{{- else if eq .Params.kind "thesis" -}}{{- $extLabel = "Thesis Link" -}}{{- $extIcon = "bi-book" -}}{{- end -}}
           {{ with .Params.external_url }}
           <a class="badge rounded-pill border bg-light text-secondary caps fw-normal fs-6 me-1" href="{{ . }}" target="_blank" rel="noopener">
-            <i class="bi bi-journal-text text-primary"></i> Journal Link
+            <i class="bi {{ $extIcon }} text-primary"></i> {{ $extLabel }}
           </a>
           {{ end }}
         </div>
