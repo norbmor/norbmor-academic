@@ -22,7 +22,7 @@ This repository contains the source code and content for **Norberto Moreno-Quib√
   - Primary color (`--bs-primary`): `#002C91` (Universidad de Alcal√° official corporate blue, Pantone 661 C).
   - Secondary color (`--bs-secondary`): `#5A76B0` (muted slate blue for borders, dates, pilcrows, and badges).
 - **Conventions**:
-  - Homepage introduction (`content/_index.md`) uses inline pilcrow separators (`<span class="text-secondary">&para;</span>`) between sentences/topics and a left-floated portrait thumbnail (`/img/foto-NMQ-2018.jpg`).
+  - Homepage introduction (`content/_index.md`) uses inline pilcrow separators (`<span class="text-secondary">&para;</span>`) between sentences/topics and a left-floated portrait thumbnail (`/img/foto-NMQ-2025-01.jpg`).
   - Email address (`norberto.morenoquibe@uah.es`) in `layouts/partials/footer.html` must remain **non-clickable** plain text styled in UAH blue (`<span class="text-primary">norberto.morenoquibe@uah.es</span>`).
 
 ## 3. Content Structure & How Pages Update
